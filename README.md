@@ -30,23 +30,35 @@
   
 六、文件结构说明
 
-  1. Java/Kotlin 文件
+ 1. Java/Kotlin 文件
+ 
   MainActivity.kt：项目核心文件，负责初始化控件、处理用户交互（如上传图片、发布内容）、调用系统服务（如位置获取）、管理数据（如图片列表、Mock 用户 / 话题）等。
+  
   ImageAdapter.kt：图片列表的适配器，负责将图片数据绑定到 item_image.xml 布局，处理图片的显示、点击和删除事件（本项目中为 MainActivity 内部类，也可独立成文件）。
+  
   ImageItem.kt：图片数据模型，存储图片的唯一 ID 和 Uri（本项目中为 MainActivity 内部类，也可独立成文件）。
   2. 布局文件
+  
   activity_main.xml：主布局，包含封面图、图片列表、输入框、话题按钮、位置信息、上传图片模块、发布按钮等所有界面元素。
+  
   item_image.xml：图片列表项布局，用于显示单张图片和删除按钮。
+  
   popup_at_users.xml：@用户时弹出的弹窗布局，包含一个列表显示 Mock 用户。
+  
   popup_hot_topics.xml：选择话题时弹出的弹窗布局，包含一个列表显示热门话题。
+  
   3. 资源文件
+  
   colors.xml：定义项目中使用的颜色，如背景色、文字色、按钮色等。
-  strings.xml：存储字符串资源（本项目未使用，可将硬编码文字放入此处，便于国际化）。
-  styles.xml：定义应用样式（本项目未使用，默认样式即可满足需求）。
+  
   drawable/：存储图片资源，如上传图片的加号图标（本项目用系统图标，可选自定义）。
-  mipmap/：存储应用图标，如 launcher 图标（默认生成，无需修改）。
+  
+  mipmap/：存储应用图标，如 launcher 图标。
+  
   4. 配置文件
+     
   AndroidManifest.xml：应用清单，声明应用名称、图标、权限（如位置权限、存储权限）、主活动等关键信息。
+  
   build.gradle：模块级构建文件，配置项目依赖（如 Glide、RecyclerView、Google 位置服务）、编译版本、签名信息等。
 
   
