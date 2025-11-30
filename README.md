@@ -1,5 +1,5 @@
 # ByteDance_trainning_zyx
-这是字节跳动训练营的项目，选择任务二，一个Android应用demo，
+这是字节跳动训练营的项目，选择任务二，一个Android应用demo。
 一、项目概述
   zyx 是一个轻量级 Android 应用，旨在帮助用户快速创建并发布带有文字、图片、位置信息的内容。目前已经开发出一下功能：支持以下核心功能：多图上传与封面设置、拖拽排序图片、支持@用户和#话题的文本输入、自动获取地理位置、本地预览与发布模拟、内容字数限制，预留了后端上传接口，并采用 Kotlin + ViewBinding + RecyclerView + Retrofit + Glide 等现代 Android 开发技术栈，结构清晰，便于维护和二次开发。
 二、技术架构
