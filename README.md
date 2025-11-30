@@ -27,25 +27,6 @@
 五、网络与后端对接（未开发完）
 
   本次demo中预留了网络接口，当前未在 MainActivity 中调用上传，但已准备好 Retrofit 客户端。预想点击发布后可以跳转相应界面。用户可通过 network_security_config.xml 进行 HTTP ，并开启 HttpLoggingInterceptor，打印完整请求/响应。
-  API 接口定义（ApiService.kt）：
-  @Multipart
-  @POST("upload")
-  fun uploadImage(
-    @Part("description") description: RequestBody,
-    @Part image: MultipartBody.Part
-  ): Call<UploadResponse>
-  
-  响应模型：
-  
-  data class UploadResponse(
-    val success: Boolean,
-    val message: String,
-    val data: UploadData? = null
-  )
-  
-  data class UploadData(
-    val imageUrl: String
-  )
   
 六、文件结构说明
   1. Java/Kotlin 文件
