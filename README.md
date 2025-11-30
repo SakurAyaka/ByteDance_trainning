@@ -1,0 +1,2 @@
+# ByteDance_trainning
+这是字节跳动训练营的项目，一个Android应用demo
