@@ -29,6 +29,7 @@
   本次demo中预留了网络接口，当前未在 MainActivity 中调用上传，但已准备好 Retrofit 客户端。预想点击发布后可以跳转相应界面。用户可通过 network_security_config.xml 进行 HTTP ，并开启 HttpLoggingInterceptor，打印完整请求/响应。
   
 六、文件结构说明
+
   1. Java/Kotlin 文件
   MainActivity.kt：项目核心文件，负责初始化控件、处理用户交互（如上传图片、发布内容）、调用系统服务（如位置获取）、管理数据（如图片列表、Mock 用户 / 话题）等。
   ImageAdapter.kt：图片列表的适配器，负责将图片数据绑定到 item_image.xml 布局，处理图片的显示、点击和删除事件（本项目中为 MainActivity 内部类，也可独立成文件）。
